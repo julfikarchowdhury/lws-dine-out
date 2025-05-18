@@ -1,31 +1,35 @@
 import { useState } from "react";
-
 import Product from "./Product";
+import burger from "/src/assets/burger.svg";
+import icecream from "/src/assets/ice-cream.svg";
+import spaghetti from "/src/assets/spaghetti.svg";
+import sushi from "/src/assets/sushi.svg";
+import taco from "/src/assets/taco.svg";
 
 const CreateForm = ({ changeOrderState }) => {
   const products = [
     {
-      icon: "/src/assets/burger.svg",
+      icon: burger,
       name: "Cheeseburger",
       price: 350,
     },
     {
-      icon: "/src/assets/sushi.svg",
+      icon: sushi,
       name: "Sushi Roll",
       price: 600,
     },
     {
-      icon: "/src/assets/taco.svg",
+      icon: taco,
       name: "Taco",
       price: 300,
     },
     {
-      icon: "/src/assets/spaghetti.svg",
+      icon: spaghetti,
       name: "Spaghetti",
       price: 450,
     },
     {
-      icon: "/src/assets/ice-cream.svg",
+      icon: icecream,
       name: "Ice Cream",
       price: 250,
     },
